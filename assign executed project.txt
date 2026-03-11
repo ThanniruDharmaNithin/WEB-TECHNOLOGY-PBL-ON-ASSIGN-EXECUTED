@@ -1,0 +1,73 @@
+project info
+title: assign executed
+team members:keerthana,dharma nithin,paga manasa
+                               To design a program for login and data submission using a client-server architecture
+
+Server Side:
+1. Set up a server that listens for client connections.
+2. Implement a database to store student information, including roll numbers, passwords, assignments, and faculty information.
+3. Create an API on the server to handle incoming requests from clients, such as login requests and data submission requests.
+4. Implement verify the entered roll number and password against the database.
+5. Handle login requests by validating the credentials and returning a session token or authentication status to the client.
+6. Handle data submission requests by storing the submitted assignment in the corresponding database entry for the student.
+
+Client Side:
+1. Develop a user interface (UI) for the login page where students can enter their roll number and password.
+2. Upon entering the credentials, send a login request to the server using the provided API.
+3. Receive the response from the server indicating the success or failure of the login attempt.
+4. If the login is successful, proceed to the assignment submission page.
+5. Implement a form where students can enter the assignment details and select the faculty to whom the assignment needs to be submitted.
+6. Send the assignment submission request to the server, along with the necessary information.
+7. Receive the response from the server confirming the successful submission of the assignment.
+
+Server-Client Interaction:
+1. The server and client communicate using HTTP or a similar protocol.
+2. The client sends requests to the server, including login and data submission requests, using the appropriate API endpoints.
+3. The server processes the requests, validates the data, performs the necessary actions, and sends back the corresponding responses.
+4. The client receives the server responses and updates the UI accordingly, displaying success or error messages to the user.
+
+                                         program outline using web technologies:
+
+1. Server-Side:
+   - Use a web framework like Node.js with Express to handle server-side logic.
+   - Set up routes to handle different endpoints, such as `/login` for login requests and `/submit` for assignment submission requests.
+   - Create a database (e.g., MySQL or MongoDB) to store student information, assignments, and faculty data.
+   - Implement authentication mechanisms to verify login credentials against the database.
+   - Handle login requests by validating the entered roll number and password and returning an appropriate response (e.g., session token or authentication status).
+   - Handle assignment submission requests by storing the submitted data in the database.
+
+2. Client-Side:
+   - Use HTML, CSS, and JavaScript to create the user interface (UI) for the login and assignment submission pages.
+   - Set up a form in the login page to capture roll number and password input from the user.
+   - Send a login request from the client-side using JavaScript's `fetch` or similar API to the server's `/login` endpoint.
+   - Receive the response from the server and update the UI accordingly (e.g., display a success message or show an error if the login failed).
+   - Once logged in, navigate to the assignment submission page.
+   - Implement a form in the submission page to capture assignment details (e.g., title, description) and faculty selection.
+   - On assignment submission, send a request to the server's `/submit` endpoint with the assignment data using `fetch` or similar API.
+   - Receive the response from the server, indicating the success or failure of the assignment submission, and update the UI accordingly.
+
+3. Database:
+   - Set up a database using a technology of your choice (e.g., MySQL or MongoDB).
+   - Create tables or collections to store student information, assignments, and faculty data.
+   - Design the database schema to include fields like roll number, password, assignment details, and faculty information.
+4. Additional Considerations:
+   - Implement security measures like hashing and salting passwords to protect user information.
+   - Handle form validation on the client-side to ensure proper data entry.
+   - Implement server-side validation to prevent unauthorized access or data manipulation.
+   - Consider implementing session management to maintain user authentication state.
+   - Use appropriate error handling and display user-friendly error messages.
+
+future scope of project :
+
+-internal lab exam
+-compile the program
+-error handling while executing the prgram
+-executed screen will be shared to faculty
+-college info can be passed by the faculty
+-notification will passed before the dead line of the submission
+
+conclusion:
+- the nessasary information and exams with notification alert can be done through the web site
+-the exam can be conducted with fare were the chrome cant be accesed
+-the hard work of students will be noticed by the execution output.
+
